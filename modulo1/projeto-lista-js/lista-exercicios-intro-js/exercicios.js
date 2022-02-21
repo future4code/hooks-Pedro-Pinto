@@ -43,19 +43,13 @@ function imprimeIdade() {
 function calculaIMC(peso, altura) {
   return calculaIMC = (peso / (altura * altura))
 }
-  
-// // const peso = prompt ("Qual o seu peso em KG ?")
-// // const altura = prompt ("Qual a sua altura em metros?")
-// retorn peso = 1
-// retorn 
-// const calculaIMC = (peso / (altura * altura))
-// console.log (calculaIMC)
 
 
 // EXERCÍCIO 04
 
 function imprimeInformacoesUsuario() {
   
+ 
   const nome = prompt("Digite seu nome")
   const idade = Number(prompt("Digite sua idade"))
   const email = prompt("Digite seu e-mail")
@@ -67,50 +61,58 @@ function imprimeInformacoesUsuario() {
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
 
-const cor1 = prompt("Qual a sua priemira cor favorita?")
-const cor2= prompt("Qual a sua segunda cor favorita?")
-const cor3 = prompt("Qual a sua terceira cor favorita?")
-const array = [cor1,cor2,cor3]
-console.log = array
+  const cor1 = prompt("Qual a sua priemira cor favorita?")
+  const cor2 = prompt("Qual a sua segunda cor favorita?")
+  const cor3 = prompt("Qual a sua terceira cor favorita?")
+  console.log ([cor1, cor2, cor3])
+  
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
-  // implemente sua lógica aqui
-
   
-const retornaStringEmMaiuscula = string.toLowerCase()
-
+  return retornaStringEmMaiuscula = string.toUpperCase()
 
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  // implemente sua lógica aqui
+
+ return calculaIngressosEspetaculo = Custo / valorIngresso
 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
+  
+  const tamanho1 = string1.length
+  const tamanho2 = string2.length 
+  return checaStringsMesmoTamanho = tamanho1 === tamanho2
 
+  
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
+  
+  return retornaPrimeiroElemento = array[0]
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+ 
+  const tamanho = array.length 
+  return tamanho - 1
 
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
+  
+  const primeiro = array [0]
+  const ultimo = array [array.length -1]
+  return array  
 
 }
 
