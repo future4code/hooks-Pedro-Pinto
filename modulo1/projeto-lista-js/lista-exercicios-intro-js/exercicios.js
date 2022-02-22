@@ -49,7 +49,7 @@ function calculaIMC(peso, altura) {
 
 function imprimeInformacoesUsuario() {
   
- 
+
   const nome = prompt("Digite seu nome")
   const idade = Number(prompt("Digite sua idade"))
   const email = prompt("Digite seu e-mail")
@@ -61,29 +61,36 @@ function imprimeInformacoesUsuario() {
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
 
+
   const cor1 = prompt("Qual a sua priemira cor favorita?")
   const cor2 = prompt("Qual a sua segunda cor favorita?")
   const cor3 = prompt("Qual a sua terceira cor favorita?")
   console.log ([cor1, cor2, cor3])
   
+
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
+
   
   return retornaStringEmMaiuscula = string.toUpperCase()
+
 
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
 
+
  return calculaIngressosEspetaculo = Custo / valorIngresso
+
 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
+
   
   const tamanho1 = string1.length
   const tamanho2 = string2.length 
@@ -94,13 +101,16 @@ function checaStringsMesmoTamanho(string1, string2) {
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
+
   
   return retornaPrimeiroElemento = array[0]
+
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
+
  
   const tamanho = array.length 
   return tamanho - 1
@@ -109,10 +119,12 @@ function retornaUltimoElemento(array) {
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
+
   
   const primeiro = array [0]
   const ultimo = array [array.length -1]
   return array  
+
 
 }
 
