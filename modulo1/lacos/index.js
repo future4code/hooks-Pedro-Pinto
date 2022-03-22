@@ -51,7 +51,6 @@ let arrayOriginal = [1,3,6,9,12]
 //c.
 
 function imprimeArray(array) {
-
     const arrayPares =[]
 
     for (let i = 0; i < arrayOriginal.length; i++) {
