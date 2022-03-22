@@ -112,7 +112,7 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 }
 
-// EXERCÍCIO 10
+// EXERCÍCIO 10 (teste envio novo pull request)
 function retornaSegundoMaiorESegundoMenor(array) {
 
 
