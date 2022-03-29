@@ -1,0 +1,26 @@
+body{
+
+    background-color:#BEBEBE;
+}
+
+.menu-principal{
+
+    background-color: #5F9EA0;
+    color: #f7f2ff;
+    clear: both;
+    position: fixed;
+    higher: 0;
+    right: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: #4682B4;
+    color: #f7f2ff;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
