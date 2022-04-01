@@ -1,0 +1,54 @@
+header {
+    background-color:mediumvioletred;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    
+}
+
+
+.menuesquerdo {
+    
+    background-color:#f2d0e0;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.imagensbolo {
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+}
+
+img {
+    width: 150px;
+}
+
+
+.container {
+
+    display: flex;
+}
+
+
+
+
+
+footer {
+background-color:mediumvioletred ;
+display: flex;
+justify-content:center ;
+padding: 15 px 0 ;
+
+
+/* text-align: center;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 100px;    
+line-height: 100px; */
+ 
+}
