@@ -10,7 +10,9 @@ header {
     display: flex;
     align-items:center ;
     justify-content: space-between;
-    height: 60px;
+    height: 50px;
+    font-size: 25px;
+    padding: 0px 20px;
 }
 
 footer {
@@ -18,7 +20,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 50px;
         
     }
 
@@ -53,5 +55,24 @@ footer {
 
     width: 100%;
     
-
     }
+
+
+    .videosozinho {
+        width: 100vw;
+    }
+
+
+
+    @media screen and (max-device-width : 480px) {
+
+    .videos {
+
+       display: flex;
+       flex-direction: column;
+        
+    }
+    
+   
+
+}    
