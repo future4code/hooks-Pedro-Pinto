@@ -67,6 +67,7 @@ return (
 
 export default App;
 
+<<<<<<< HEAD
 
 
 // render() {
@@ -98,3 +99,6 @@ export default App;
 // }
 
 // export default App;
+=======
+//oi
+>>>>>>> 1610104fe89d3e33c941ff897b2210cddf675e04
