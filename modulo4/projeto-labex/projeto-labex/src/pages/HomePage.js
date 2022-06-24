@@ -1,21 +1,17 @@
 import {useNavigate} from "react-router-dom"
-import Router from "../navigate/Router"
-import ListTripsPage from "./ListTripsPage"
+import { goToTravels , goToAdminPage  } from "../navigate/Navigator"
+
+
 
 function HomePage () {
     const navigate = useNavigate()
 
-    const goToTravels = () => {
-        navigate("listTripPage")
-    }
-    const goToAdminPage = () => {
-        navigate("adminHomePage")
-    }    
+    
 
     return ( 
         <>
-            <button onClick={goToTravels}> Ver viagens </button>
-            <button onClick={goToAdminPage}> Área do Admin </button>
+            <button onClick={()=> goToTravels(navigate)}> Ver viagens </button>
+            <button onClick={()=> goToAdminPage(navigate)}> Área do Admin </button>
         </>
 
     )

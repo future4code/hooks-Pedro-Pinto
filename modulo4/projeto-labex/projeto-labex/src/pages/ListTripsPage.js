@@ -14,7 +14,7 @@ import styled from "styled-components";
 
    const getListTrips = () => {
     axios
-        .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas/trips")
+        .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/pedro-cesar-hooks/trips")
         .then((res)=> {
             setTripsList(res.data.trips);
             // console.log (res.data.trips);
@@ -43,7 +43,6 @@ import styled from "styled-components";
        </div>
 
     
-
      )
     }
 
