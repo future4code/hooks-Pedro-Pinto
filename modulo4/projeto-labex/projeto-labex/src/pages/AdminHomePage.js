@@ -1,12 +1,11 @@
 import UseProtectedPage from "../hooks/UseProtectedPage";
 import { useNavigate } from "react-router-dom";
-import { goToHome , goToCreateTrip , goToTripDetails } from "../navigate/Navigator";
+import { goToHome , goToCreateTrip , goToTripDetails, gotToPrivateArea } from "../navigate/Navigator";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 const AdminHomePage = () => {  
  
-
     UseProtectedPage()
 
     const navigate = useNavigate()
@@ -64,7 +63,7 @@ const trips = tripsList.map ((trips)=>{
    return (
         <> 
    
-            <div>"Página do Adm"</div>
+            <div>Painel Administrativo</div>
             <div>
                     <button onClick={()=>goToHome(navigate)} > Voltar </button>
                     <button onClick={()=>goToCreateTrip(navigate)} > Criar Viagem </button>

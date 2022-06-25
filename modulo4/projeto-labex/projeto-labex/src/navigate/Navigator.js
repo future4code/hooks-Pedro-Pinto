@@ -18,3 +18,20 @@ export const goToCreateTrip = (navigate) => {
 export const goToTripDetails = (navigate) => {
     navigate(`/admin/trips/${localStorage.getItem ("tripId")}`)
 }
+
+export const goToAplicationFormPage = (navigate) => {
+    navigate("/trips/application")
+ }
+
+export const gotToPrivateArea = (navigate) => {
+    const token = localStorage.getItem("token")
+
+    if(token === null) {
+        navigate("/login")
+    }
+    else{
+        navigate ("/admin/trips/list")
+    }
+
+ }
+

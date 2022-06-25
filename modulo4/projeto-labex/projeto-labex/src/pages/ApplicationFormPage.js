@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import {goToTravels} from "../navigate/Navigator"
+import { useNavigate } from "react-router-dom"
 
 
-
-function ApplicationFormPages (){
+function ApplicationFormPage (){
     const [tripsList, setTripsList] = useState([]);
     const [name,setName] = useState ("")
     const [age,setAge] = useState ("")
@@ -12,6 +12,8 @@ function ApplicationFormPages (){
     const [profession,setProfession] = useState ("")
     const [country,setCountry] = useState ("")
     const [id,setId] = useState("")
+
+    const navigate = useNavigate()
 
     const onChangeName = (event) => {
         setName (event.target.value)
@@ -76,37 +78,28 @@ function ApplicationFormPages (){
 
      }
 
-     console.log (id)
+    //  console.log (id)
 
     return (<>
     <select value={id} onChange={onChangeId}  > 
         <option> Selecionar Viagem </option>
         {renderTrips} 
-    
-     </select>
+    </select>
     <input placeholder="Nome" value={name} onChange={onChangeName} />
     <input placeholder="Idade" value={age} onChange={onChangeAge} />
     <input placeholder="Texto de Candidatura" value={applicationText} onChange={onChangeApplicationText} />
     <input placeholder="Profissão" value={profession} onChange={onChangeProfession} />
     <input placeholder="País" value={country} onChange={onChangeCountry} />
+    <button onClick={()=>goToTravels(navigate)}  > Voltar </button>
     <button onClick={()=>applyTrip()} > Enviar </button>
 
     </>)
 }
 
-export default ApplicationFormPages;
+export default ApplicationFormPage;
 
 
 
 
 
 
-
-
-
-
-// name": "Astrodev",
-//     "age": 20,
-//     "applicationText": "Quero muuuuuuito ir!!!",
-//     "profession": "Chefe",
-//     "country": "Brasil"

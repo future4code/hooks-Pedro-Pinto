@@ -1,13 +1,16 @@
-import HomePage from "../pages/HomePage"
-import Router from "../navigate/Router"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import styled from "styled-components";
+import {goToAplicationFormPage} from "../navigate/Navigator"
+import { useNavigate} from "react-router-dom"
+import { goToHome} from "../navigate/Navigator";
+ 
+
 
     const Trips = () => {
         const [tripsList, setTripsList] = useState([]);
-    
+        const navigate = useNavigate()
+
    useEffect(() => {
     getListTrips();
    }, []);
@@ -25,23 +28,28 @@ import styled from "styled-components";
     }
 
      return (
-        <div>
-          {tripsList.map((viagens)=> {
+        <> 
+            <button onClick={()=>goToHome(navigate)} > Voltar </button>
+            <button onClick={()=>goToAplicationFormPage(navigate)} > Inscrever-se </button>
+            <h2>Lista de Viagens</h2>
 
-        return <div key= {viagens.id}>
-                    <p> {viagens.name}</p>
-                    <p> {viagens.description} </p>
-                    <p> {viagens.planet} </p>
-                    <p> {viagens.durationInDays} </p>
-                    <p> {viagens.date} </p>
-                   
-                </div>
-        
-            }
-            )
-        }
-       </div>
+            <div>
+            {tripsList.map((viagens)=> {
+                return <div>               
+                            <div key= {viagens.id}>
+                            <p> Nome: {viagens.name}</p>
+                            <p> Descrição: {viagens.description} </p>
+                            <p> Planeta: {viagens.planet} </p>
+                            <p> Duração: {viagens.durationInDays} </p>
+                            <p> Data: {viagens.date} </p>
+                            </div>
+                        </div>        
+                        }
+                    )
+                }
+            </div>
 
+        </>  
     
      )
     }

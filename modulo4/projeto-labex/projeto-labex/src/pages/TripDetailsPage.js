@@ -51,7 +51,11 @@ function TripDetailsPage () {
 
     const renderCandidates = canditadesPendentes.map((candidates)=>{
         return <div key={candidates.id}>
-            {candidates.name}
+          <p>Nome: {candidates.name} </p>
+          <p>Profissão: {candidates.profession} </p>
+          <p>Idade: {candidates.age} </p>
+          <p>Texto de Candidatura: {candidates.applicationText} </p>
+
             <button onClick={()=> decideCandidates(true,candidates.id)} > Aprovar</button>
             <button onClick={()=> decideCandidates(false,candidates.id)}  > Reprovar </button>
             </div> 
@@ -60,7 +64,9 @@ function TripDetailsPage () {
 
     const renderCandidatesAprov = candidatesAprov.map((candidates)=>{
         return <div key={candidates.id}>
-            {candidates.name}</div> 
+           <p> {candidates.name}</p>
+           
+           </div> 
     })
 
 
@@ -68,10 +74,10 @@ function TripDetailsPage () {
     <>    
 
     <p>Nome: {trip.name}</p>
-    <p> Descrição: {trip.description}</p>
-    <p>{trip.durationInDays}</p>
-    <p>{trip.planet}</p>
-    <p>{trip.date}</p>
+    <p>Descrição: {trip.description}</p>
+    <p>Planeta: {trip.planet}</p>
+    <p>Duração: {trip.durationInDays}</p>
+    <p>Data: {trip.date}</p>
 
      <h1>Candidados Pendentes</h1>
      {renderCandidates}  

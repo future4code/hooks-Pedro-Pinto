@@ -5,7 +5,7 @@ import AdminHomePage from "../pages/AdminHomePage"
 import TripDetailsPage from "../pages/TripDetailsPage"
 import LoginPage from "../pages/LoginPage";
 import CreateTripPage from "../pages/CreateTripPage";
-import ApplicationFormPages from "../pages/ApplicationFormPage";
+import ApplicationFormPage from "../pages/ApplicationFormPage";
 
 function Router() {
     return(
@@ -17,7 +17,7 @@ function Router() {
                 <Route path="/admin/trips/:id" element={<TripDetailsPage/>}/>
                 <Route path="/login" element={<LoginPage/>}/>
                 <Route path="/admin/trips/create" element={<CreateTripPage/>}/>
-                <Route path="/trips/application" element={<ApplicationFormPages/>}/>
+                <Route path="/trips/application" element={<ApplicationFormPage/>}/>
                 </Routes>
         </BrowserRouter>
             )
