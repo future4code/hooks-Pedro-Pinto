@@ -1,0 +1,12 @@
+{
+  "name": "ex3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./Ex2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
