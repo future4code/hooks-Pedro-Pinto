@@ -49,8 +49,7 @@ website: "www.uol.com.br",
 
 ]
 
-app.get ("/users", (req , resp) => {
-    const usuarios = users.map ((usuario) => usuario);
+app.get ("/users", (req , resp) => {    const usuarios = users.map ((usuario) => usuario);
     resp.send (usuarios)
 })
 
