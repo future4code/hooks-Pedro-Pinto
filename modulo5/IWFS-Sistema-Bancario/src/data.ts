@@ -1,3 +1,9 @@
+export enum Transacao {
+    DEBITO = "Pagamento de conta",
+    DEPOSITO = "Depósito de dinheiro",
+    TRANSFERENCIA_SAIDA = "Transferência de dinheiro",
+    TRANSFERENCIA_ENTRADA = "Recebimento de transferência de dinheiro"
+}
 
 export type DadosUsuario = {
     name: string,
@@ -14,7 +20,7 @@ export type DadosConta = {
 export type Extrato = {
     valor: number,
     data: string,
-    descricao: string,
+    descricao: Transacao,
     status?: string
 }
 
@@ -30,31 +36,49 @@ export const usuarios: Conta[] = [
             {
                 valor: 100.0,
                 data: "26/08/2022",
-                descricao: "teste",
+                descricao: Transacao.DEBITO,
             },
             {
                 valor: 500.0,
                 data: "02/08/2022",
-                descricao: "teste",
+                descricao: Transacao.DEBITO,
             },
             {
                 valor: 1000.0,
                 data: "02/08/2022",
-                descricao: "teste",
+                descricao: Transacao.DEBITO,
             }
 
         ]
     },
 
-    // {
-    //     name: "Miguel",
-    //     cpf:"222.222-.22-22",
-    //     birthday:"02-04-2016", 
-    // },
-
-    // {
-    //     name: "Amanda",
-    //     cpf: "333.333.333-11",
-    //     birthday:"14-10-1992", 
-    // }
+    {
+        name: "Rengar",
+        cpf: "452.546.754-06",
+        birthday: "15/01/1997",
+        saldo: 5000.00,
+        extrato: [
+            {
+                valor: 5000.00,
+                data: "08/04/2022",
+                descricao: Transacao.DEPOSITO,
+            },
+            {
+                valor: 1000.00,
+                data: "08/04/2022",
+                descricao: Transacao.DEBITO,
+            },
+            {
+                valor: 1500.00,
+                data: "08/04/2022",
+                descricao: Transacao.DEBITO,
+            },
+            {
+                valor: 1200.00,
+                data: "09/04/2022",
+                descricao: Transacao.DEBITO,
+            },
+        ],
+    }
+    
 ]
